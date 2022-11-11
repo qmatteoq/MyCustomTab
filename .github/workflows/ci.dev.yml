@@ -3,7 +3,7 @@
 name: 'Continuous Integration'
 on:
   # When pull requests targeting the dev branch created.
-  pull_request:
+  push:
     branches:
       - master
   workflow_dispatch:
