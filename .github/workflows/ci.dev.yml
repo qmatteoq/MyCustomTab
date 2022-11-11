@@ -10,7 +10,7 @@ on:
     
 jobs:
   buildAndTest:
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
     steps:
       # Setup environment.    
       - name: Checkout the code
