@@ -12,15 +12,14 @@ jobs:
   buildAndTest:
     runs-on: ubuntu-latest
     steps:
-      # Setup environment.
+      # Setup environment.    
+      - name: Checkout the code
+        uses: actions/checkout@v2
+        
       - uses: actions/setup-node@v2
         with:
           node-version: '14'
           cache: 'npm'
-          cache-dependency-path: tabs/package-lock.json
-
-      - name: Checkout the code
-        uses: actions/checkout@v2
  
       # Build the project.
       # The way to build the current project depends on how you scaffold it.
